@@ -1,33 +1,38 @@
 {
-  "name": "clockify-npm",
-  "version": "0.0.6",
-  "description": "Rest Client for Clockify https://clockify.me",
+  "name": "clockify-js-client",
+  "version": "0.1.0",
+  "description": "ES6 Rest Client for Clockify https://clockify.me",
   "main": "app.js",
   "scripts": {
     "test": "mocha"
   },
+  "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sinumohan/clockify-npm.git"
+    "url": "git+https://github.com/dielok/clockify-js-client.git"
   },
   "keywords": [
     "clockify",
     "npm",
     "js",
     "time",
-    "tracker"
+    "tracker",
+    "timetracking",
+    "javascript",
+    "ts",
+    "typescript"
   ],
-  "author": "Sinu Mohan <sinumohan777@gmail.com>",
+  "author": "Dielok <dielok@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sinumohan/clockify-npm/issues"
+    "url": "https://github.com/dielok/clockify-js-client/issues"
   },
-  "homepage": "https://sinumohan.github.io/Clockify-npm/",
+  "homepage": "https://github.com/dielok/clockify-js-client",
   "dependencies": {
-    "request": "^2.88.0"
+    "axios": "0.21.4"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
-    "mocha": "^6.1.4"
+    "mocha": "^7.0.0-esm1"
   }
 }

@@ -1,13 +1,12 @@
-const Api = require('./request-interface');
-const Workspaces = require('./lib/Workspace');
-const User = require('./lib/User');
-let API_BASE_END_POINT= 'https://api.clockify.me/api/v1';
+import axios from './request-interface.js';
+import Workspaces from './lib/Workspace.js';
+import User from './lib/User.js';
 
 const SetKey = (KEY) => {
-    Api.SetKey(KEY);
+    axios.defaults.headers.common['X-Api-Key'] = KEY;
 }
 
-module.exports = {
+export default {
     SetKey,
     Workspaces,
     User

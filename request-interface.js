@@ -1,4 +1,4 @@
-var request = require("request");
+import Axios from 'axios';
 let API_KEY= '';
 let API_BASE_END_POINT= 'https://api.clockify.me/api/v1';
 
@@ -6,12 +6,12 @@ const SetKey = (KEY) => {
     CLIENT_API_KEY = KEY;
 }
 const makeServerRequest = (method, apipath, body) =>{
-    var options = { 
+    var options = {
         method: method || 'GET',
         url: `${ API_BASE_END_POINT }${ apipath }`,
-        headers: {  
-            'X-Api-Key': CLIENT_API_KEY, 
-            'Content-Type': 'application/json' 
+        headers: {
+            'X-Api-Key': CLIENT_API_KEY,
+            'Content-Type': 'application/json'
         },
         json: true,
         body: body || {}
@@ -24,7 +24,18 @@ const makeServerRequest = (method, apipath, body) =>{
     })
 }
 
-module.exports = {
+const axios = Axios.create({
+    baseURL: 'https://api.clockify.me/api/v1',
+    timeout: 1000,
+    headers: {
+        'Content-Type': 'application/json',
+    }
+});
+
+export {
     SetKey,
-    makeServerRequest
+    makeServerRequest,
+    axios
 }
+
+export default axios;

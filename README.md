@@ -16,7 +16,7 @@
 You can find the different methods under `lib/Workspace.js`.
 
 ```
-const Clockify = require('clockify-npm');
+import Clockify from 'clockify-js-client';
 
 Clockify.SetKey('YOUR_API_KEY');
 
