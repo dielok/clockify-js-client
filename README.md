@@ -9,7 +9,7 @@
 
 ## Installation
 
-`npm install clockify-npm`
+`npm install clockify-js-client`
 
 ## Examples
 

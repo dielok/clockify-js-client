@@ -1,6 +1,6 @@
 {
   "name": "clockify-js-client",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ES6 Rest Client for Clockify https://clockify.me",
   "main": "app.js",
   "scripts": {
@@ -22,7 +22,7 @@
     "ts",
     "typescript"
   ],
-  "author": "Dielok <dielok@gmail.com>",
+  "author": "Dielok <chris.pillen@yahoo.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dielok/clockify-js-client/issues"
